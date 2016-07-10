@@ -1,0 +1,404 @@
+#theElement {
+    position: relative;
+    display: inline-block;
+}
+
+.photo-details-wrap {
+
+  width: 100%;
+
+  .photo-details-left {
+    position: absolute;
+    top: 0;
+    right: 400px;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    text-align: center;
+
+
+  }
+.photo-expanded{
+    height:100%;
+    width:auto;
+
+    }
+  .photo-details-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: white;
+    box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.1);
+.slick-slider{
+  margin-bottom: 16px;
+  margin-top: 9px;
+}
+
+.slick-list{
+  height: 133px;
+}
+
+.slick-dots{
+  bottom: 0;
+}
+  .photo-title{
+    font-size: 2.2em;
+    color: #525252;
+    font-weight: 100;
+    padding-top: 7px;
+    width: 75%;
+    margin-top: -11px;
+    margin-left: -4px;
+}
+
+.photo-likes{
+    border: 1px dashed #ffcc00;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 400;
+    right: 45px;
+    top: 13px;
+    height: 94px;
+    width: 94px;
+    text-align: center;
+    border-radius: 8px;
+    display:block;
+}
+
+.likes-count{
+  display: inline;
+  width: 100%;
+  font-weight: 400;
+  font-size: 28px;
+  display:block;
+
+  }
+  .likes-word{
+    font-weight: 100;
+    font-size: 25px;
+    display:block;
+  }
+
+  .photo-details-like{
+    color: #ff7f7f;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    font-size: 19px;
+    -o-transition: all 0.2s ease; 
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
+  .photo-details-like:hover{
+    cursor: pointer;
+    color: #e44545;
+    -o-transition: all 0.2s ease; 
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    font-size:25px;
+  }
+    .photo-description{
+
+      font-size: 17px;
+      padding-top: 15px;
+      color: rgba(82, 82, 82, 0.74);
+      float: left;
+      border-top: 1px solid #ffcc00;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ffcc00;
+      margin-bottom: 8px;
+      font-weight:300;
+    }
+
+  .comments-container{
+    padding:8px;
+
+    #photo-comments-wrapper{
+
+      .photo-comment-submit{
+        text-align: center;
+        margin-bottom: 15px;
+
+        #commentSubmitForm{
+          resize:none;
+          width:100%;
+          border:1px dashed rgba(82, 82, 82, 0.54);
+          font-family:'Yantramanav';
+          font-weight:300;
+          color:#525252;
+          font-size:  17px;
+          -webkit-transition: border-style 1s;
+          transition: border-style 1s;
+          border-style:dashed;
+          border-radius: 0px;
+          padding-left: 9px;
+        }
+
+        #commentSubmitLabel{
+          color:#525252;
+        }
+
+        #commentSubmitForm:focus{
+          outline: none;
+          border-style:solid;
+          -webkit-transition: border-style 1s;
+          transition: border-style 1s;
+        }
+
+        #commentSubmitButton{
+          background: white;
+          border-style:none;
+          border: 1px solid #ffcc00;
+          color: #ffcc00;
+          border-radius:0px;
+          -webkit-transition: border-radius 0.1s;
+          transition: border-radius 0.1s;
+          height: 25px;
+          width:100%;
+          -o-transition: all 0.3s ease; 
+          -moz-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+
+        }
+
+        #commentSubmitButton:hover{
+          cursor: pointer;
+          BACKGROUND: #ffcc00;
+          COLOR: #fff;
+          -o-transition: all 0.3s ease; 
+          -moz-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+
+        }
+      }
+
+      .photo-comment-list{
+        padding-top:8px;
+        padding-bottom:8px;
+        .comment-avatar{
+          width:40px;
+          float: left;
+          margin-right:3px;
+        }
+
+        .comment-avatar>img{
+          width:100%;
+        }
+
+        .photo-comment{
+          display: block;
+          position: relative;
+
+          .comment-content{
+            margin-left: 48px;
+            border-radius: 0px;
+            padding: 10px;
+            right: 0;
+            top: 0;
+            border: 1px solid #d8d8d8;
+            margin-bottom: 14px;
+            background:#fbfbfb;
+            min-height: 73px;
+          }
+          
+
+          .comment-content:hover{
+            .comment-control{
+            opacity:1;
+             -o-transition: all 0.1s ease; 
+    -moz-transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+
+            }
+
+
+          }
+
+          .comment-text{
+            color: #5d5d5d;
+            font-size: 17px;
+            font-weight: 300;
+            margin-top: 3px;
+          }
+          .comment-edit-submit{
+            font-family: 'Yantramanav';
+            cursor:pointer;
+            float: right;
+            background-color: white;
+            border: 1px solid #ffcc00;
+            color: #ffcc00;
+            font-size: 13px;
+            margin-top: 2px;
+            margin-right: 2px;
+            -o-transition: all 0.3s ease; 
+            -moz-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+          }
+          .comment-edit-submit:hover{
+            background:#ffcc00;
+            color:white;
+            -o-transition: all 0.3s ease; 
+          -moz-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          }
+          .comment-date{
+            color: rgba(82, 82, 82, 0.65);
+            float: right;
+            margin-top: -20px;
+            margin-right: 0px;
+            font-size: 12PX;
+          }
+          .comment-arrow{
+            position: absolute;
+            top: 13px;
+            left: 42px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 8px solid #fbfbfb;
+          }
+          .comment-arrow2{
+            position: absolute;
+            top: 13px;
+            left: 41px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 8px solid #c3c3c3;
+          }
+
+              
+          .comment-author{
+            color:#525252;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 14px;
+            margin-top: -1px;
+          }
+
+          .comment-controls{
+            float:right;
+            position: absolute;
+            right: 0px;
+            bottom: 0;
+            .comment-control{
+              margin:3px;
+              opacity: 0;
+              color:rgba(255, 204, 0, 0.73);
+              -o-transition: all 0.1s ease; 
+            -moz-transition: all 0.1s ease;
+            -webkit-transition: all 0.1s ease;
+            font-size:15px;
+            }
+            .comment-control:hover{
+            color:rgba(255, 204, 0, 1);
+            font-size: 20px;
+            -o-transition: all 0.1s ease; 
+            -moz-transition: all 0.1s ease;
+            -webkit-transition: all 0.1s ease;
+            cursor:pointer;
+            }
+          }
+        }
+      }
+    } 
+  }
+
+.likes-number{
+  margin-top: 25px;
+  display: block;
+  line-height: 25px;
+}
+
+    .author-photo{
+      width: 15%;
+      position: relative;
+      float: left;
+    }
+
+    .author-name{
+      padding-top: 18px;
+      padding-left: 60px;
+      color: #b1b1b1;
+      font-weight: 400;
+    }
+
+    .author-details{
+      padding-bottom: 29px;
+    }
+  }
+}
+.related-photo-info{
+  background: rgba(255, 204, 0, 0.8);
+  color: #ffffff;
+  position: absolute;
+  width: 370px;
+  height: 100%;
+  font-family: 'Yantramanav';
+  padding-left: 5px;
+  padding-top: 0px;
+  -o-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  opacity: 0;
+  font-size: 21px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.related-photo:hover{
+  cursor:pointer;
+.related-photo-info{
+  opacity:1;
+}
+
+
+}
+.related-photo-feed{
+  margin-top: 8px;
+  color: #8e8e8e;
+
+  .related-feed-item{
+    width:100%;
+    height: 100px;
+    margin-top: 8px;
+    display: flex;
+
+    .related-feed-image{
+      width: 50%;
+      height: 100%;
+      border-right: 1px solid #c3c3c3;
+    }
+
+    .related-feed-image-info{
+      float:right;
+      width:50%;
+      padding-top: 5PX;
+
+      .image-info-title{
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 300;
+        color: #333;
+        border-bottom: 1px dashed #9a9a9a;
+
+      }
+    }
+
+  }
+   .related-feed-item:hover{
+      opacity: 0.75;
+      cursor: pointer;
+    }
+}
+
+.related-photo-feed img{
+  
+  width:185px;
+}
+
